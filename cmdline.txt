@@ -1,0 +1,1278 @@
+C:\Windows>arp -a
+
+Interface: 192.168.100.2 --- 0xe
+  Internet Address      Physical Address      Type
+  192.168.100.1         c4-a4-02-11-61-ca     dynamic
+  192.168.100.255       ff-ff-ff-ff-ff-ff     static
+  224.0.0.22            01-00-5e-00-00-16     static
+  224.0.0.251           01-00-5e-00-00-fb     static
+  224.0.0.252           01-00-5e-00-00-fc     static
+  239.255.255.250       01-00-5e-7f-ff-fa     static
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static
+
+Interface: 192.168.15.1 --- 0xf
+  Internet Address      Physical Address      Type
+  192.168.15.254        00-50-56-fc-ac-9a     dynamic
+  192.168.15.255        ff-ff-ff-ff-ff-ff     static
+  224.0.0.22            01-00-5e-00-00-16     static
+  224.0.0.251           01-00-5e-00-00-fb     static
+  224.0.0.252           01-00-5e-00-00-fc     static
+  239.255.255.250       01-00-5e-7f-ff-fa     static
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static
+
+Interface: 192.168.129.1 --- 0x10
+  Internet Address      Physical Address      Type
+  192.168.129.254       00-50-56-e3-21-8a     dynamic
+  192.168.129.255       ff-ff-ff-ff-ff-ff     static
+  224.0.0.22            01-00-5e-00-00-16     static
+  224.0.0.251           01-00-5e-00-00-fb     static
+  224.0.0.252           01-00-5e-00-00-fc     static
+  239.255.255.250       01-00-5e-7f-ff-fa     static
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static
+
+C:\Windows>bootsect
+
+bootsect {/help|/nt60|/nt52} {SYS|ALL|<DriveLetter>:} [/force] [/mbr]
+
+Boot sector restoration tool
+
+Bootsect.exe updates the master boot code for hard disk partitions in order to
+switch between BOOTMGR and NTLDR.  You can use this tool to restore the boot
+sector on your computer.
+
+Run "bootsect /help" for detailed usage instructions.
+
+cacls
+
+ NOTE: Cacls is now deprecated, please use Icacls.
+
+ Displays or modifies access control lists (ACLs) of files
+
+ CACLS filename [/T] [/M] [/L] [/S[:SDDL]] [/E] [/C] [/G user:perm]
+        [/R user [...]] [/P user:perm [...]] [/D user [...]]
+    filename      Displays ACLs.
+    /T            Changes ACLs of specified files in
+                  the current directory and all subdirectories.
+    /L            Work on the Symbolic Link itself versus the target
+    /M            Changes ACLs of volumes mounted to a directory
+    /S            Displays the SDDL string for the DACL.
+    /S:SDDL       Replaces the ACLs with those specified in the SDDL string
+                  (not valid with /E, /G, /R, /P, or /D).
+    /E            Edit ACL instead of replacing it.
+    /C            Continue on access denied errors.
+    /G user:perm  Grant specified user access rights.
+                  Perm can be: R  Read
+                               W  Write
+                               C  Change (write)
+                               F  Full control
+    /R user       Revoke specified user's access rights (only valid with /E).
+    /P user:perm  Replace specified user's access rights.
+                  Perm can be: N  None
+                               R  Read
+                               W  Write
+                               C  Change (write)
+                               F  Full control
+    /D user       Deny specified user access.
+ Wildcards can be used to specify more than one file in a command.
+ You can specify more than one user in a command.
+
+ Abbreviations:
+    CI - Container Inherit.
+         The ACE will be inherited by directories.
+    OI - Object Inherit.
+         The ACE will be inherited by files.
+    IO - Inherit Only.
+         The ACE does not apply to the current file/directory.
+    ID - Inherited.
+         The ACE was inherited from the parent directory's ACL.
+
+C:\Windows>change logon /enable
+Session logins are currently ENABLED
+
+C:\Windows>change logon /query
+Session logins are currently ENABLED
+
+C:\Windows>chkdsk d: /r
+The type of the file system is NTFS.
+Volume label is Data.
+
+Stage 1: Examining basic file system structure ...
+  104192 file records processed.
+File verification completed.
+ Phase duration (File record verification): 1.10 seconds.
+  13 large file records processed.
+ Phase duration (Orphan file record recovery): 0.00 milliseconds.
+  0 bad file records processed.
+ Phase duration (Bad file record checking): 2.40 milliseconds.
+
+Stage 2: Examining file name linkage ...
+  2497 reparse records processed.
+  107910 index entries processed.
+Index verification completed.
+ Phase duration (Index verification): 484.04 milliseconds.
+  0 unindexed files scanned.
+ Phase duration (Orphan reconnection): 15.47 milliseconds.
+  0 unindexed files recovered to lost and found.
+ Phase duration (Orphan recovery to lost and found): 3.14 milliseconds.
+  2497 reparse records processed.
+ Phase duration (Reparse point and Object ID verification): 13.30 milliseconds.
+
+Stage 3: Examining security descriptors ...
+Security descriptor verification completed.
+ Phase duration (Security descriptor verification): 4.28 milliseconds.
+  1859 data files processed.
+ Phase duration (Data attribute verification): 1.01 milliseconds.
+
+Stage 4: Looking for bad clusters in user file data ...
+Progress: 845 of 104176 done; Stage:  0%; Total:  3%; ETA:   0:20:51 ...
+
+C:\WINDOWS\system32>cmdkey /list
+
+Currently stored credentials:
+
+    Target: LegacyGeneric:target=msteams_adalsso/adal_context_16
+    Type: Generic
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (Q3JlYXRpdmVDbG91ZDF7fTIwMTgwNzIwMDE)(Part4)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Prefetched Info (SWxsdXN0cmF0b3Ixe30yMDE4MDcyMDAx)(Part2)
+    Type: Generic
+    User: App Prefetched Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (Q3JlYXRpdmVDbG91ZDF7fTIwMTgwNzIwMDE)(Part5)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (Q3JlYXRpdmVDbG91ZDF7fTIwMTgwNzIwMDE)(Part3)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (SWxsdXN0cmF0b3Ixe30yMDE4MDcyMDAx)(Part4)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (S2FpemVuMXt9MjAxODA3MjAwMQ)(Part2)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (Q0NMaWJyYXJ5MXt9MjAxODA3MjAwMQ)(Part6)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=msteams_adalsso/adal_context_22
+    Type: Generic
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (SGVscEludGVncmF0aW9uTGlicmFyeTF7fTIwMTgwNzIwMDE)(Part5)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (QWNyb2JhdFJlYWRlcjF7fTIwMTgwNzIwMDE)(Part5)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe User Info(Part2)
+    Type: Generic
+    User: User DT
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Prefetched Info (QWNyb2JhdERDMXt9MjAxODA3MjAwMQ)(Part1)
+    Type: Generic
+    User: App Prefetched Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (Q3JlYXRpdmVDbG91ZDJ7fTIwMTgwNzIwMDE)(Part6)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (Q29yZVN5bmMxe30yMDE4MDcyMDAx)(Part3)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=msteams_adalsso/adal_context_12
+    Type: Generic
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (Q3JlYXRpdmVDbG91ZDJ7fTIwMTgwNzIwMDE)(Part4)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=msteams_adalsso/adal_context_20
+    Type: Generic
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Prefetched Info (SWxsdXN0cmF0b3Ixe30yMDE4MDcyMDAx)(Part1)
+    Type: Generic
+    User: App Prefetched Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (QWNyb2JhdFJlYWRlcjF7fTIwMTgwNzIwMDE)(Part1)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe User Info(Part1)
+    Type: Generic
+    User: User DT
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (Q3JlYXRpdmVDbG91ZDJ7fTIwMTgwNzIwMDE)(Part3)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=msteams_adalsso/adal_context_17
+    Type: Generic
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (Q3JlYXRpdmVDbG91ZDJ7fTIwMTgwNzIwMDE)(Part5)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Prefetched Info (QWNyb2JhdERDMXt9MjAxODA3MjAwMQ)(Part6)
+    Type: Generic
+    User: App Prefetched Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (Q3JlYXRpdmVDbG91ZDJ7fTIwMTgwNzIwMDE)(Part1)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (SWxsdXN0cmF0b3Ixe30yMDE4MDcyMDAx)(Part6)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe User OS Info(Part1)
+    Type: Generic
+    User: User OS Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=msteams_adalsso/adal_context_11
+    Type: Generic
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (QWNyb2JhdFJlYWRlcjF7fTIwMTgwNzIwMDE)(Part3)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Prefetched Info (SWxsdXN0cmF0b3Ixe30yMDE4MDcyMDAx)(Part7)
+    Type: Generic
+    User: App Prefetched Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (Q0NYUHJvY2VzczF7fTIwMTgwNzIwMDE)(Part4)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Prefetched Info (QWNyb2JhdERDMXt9MjAxODA3MjAwMQ)(Part4)
+    Type: Generic
+    User: App Prefetched Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (SWxsdXN0cmF0b3Ixe30yMDE4MDcyMDAx)(Part1)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (Q0NMaWJyYXJ5MXt9MjAxODA3MjAwMQ)(Part5)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (Q29yZVN5bmMxe30yMDE4MDcyMDAx)(Part6)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (S2FpemVuMXt9MjAxODA3MjAwMQ)(Part4)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Prefetched Info (SWxsdXN0cmF0b3Ixe30yMDE4MDcyMDAx)(Part3)
+    Type: Generic
+    User: App Prefetched Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (Q0NYUHJvY2VzczF7fTIwMTgwNzIwMDE)(Part2)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=msteams_adalsso/adal_context_14
+    Type: Generic
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (SGVscEludGVncmF0aW9uTGlicmFyeTF7fTIwMTgwNzIwMDE)(Part4)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (S2FpemVuMXt9MjAxODA3MjAwMQ)(Part1)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (SWxsdXN0cmF0b3Ixe30yMDE4MDcyMDAx)(Part5)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=msteams_adalsso/adal_context_13
+    Type: Generic
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (Q29yZVN5bmMxe30yMDE4MDcyMDAx)(Part1)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (SWxsdXN0cmF0b3Ixe30yMDE4MDcyMDAx)(Part2)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=msteams_adalsso/adal_context_19
+    Type: Generic
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (SWxsdXN0cmF0b3Ixe30yMDE4MDcyMDAx)(Part3)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (Q0NMaWJyYXJ5MXt9MjAxODA3MjAwMQ)(Part1)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=msteams_adalsso/adal_context_21
+    Type: Generic
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (Q3JlYXRpdmVDbG91ZDJ7fTIwMTgwNzIwMDE)(Part2)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (Q3JlYXRpdmVDbG91ZDF7fTIwMTgwNzIwMDE)(Part2)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (QWNyb2JhdFJlYWRlcjF7fTIwMTgwNzIwMDE)(Part2)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (S2FpemVuMXt9MjAxODA3MjAwMQ)(Part5)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (Q29yZVN5bmMxe30yMDE4MDcyMDAx)(Part4)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=msteams_adalsso/adal_context_18
+    Type: Generic
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (Q0NYUHJvY2VzczF7fTIwMTgwNzIwMDE)(Part1)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Prefetched Info (SWxsdXN0cmF0b3Ixe30yMDE4MDcyMDAx)(Part4)
+    Type: Generic
+    User: App Prefetched Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (Q0NYUHJvY2VzczF7fTIwMTgwNzIwMDE)(Part5)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (S2FpemVuMXt9MjAxODA3MjAwMQ)(Part3)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (SGVscEludGVncmF0aW9uTGlicmFyeTF7fTIwMTgwNzIwMDE)(Part6)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (Q29yZVN5bmMxe30yMDE4MDcyMDAx)(Part2)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (Q0NYUHJvY2VzczF7fTIwMTgwNzIwMDE)(Part3)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (Q3JlYXRpdmVDbG91ZDF7fTIwMTgwNzIwMDE)(Part1)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (SGVscEludGVncmF0aW9uTGlicmFyeTF7fTIwMTgwNzIwMDE)(Part3)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (Q0NYUHJvY2VzczF7fTIwMTgwNzIwMDE)(Part6)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (SGVscEludGVncmF0aW9uTGlicmFyeTF7fTIwMTgwNzIwMDE)(Part1)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (SGVscEludGVncmF0aW9uTGlicmFyeTF7fTIwMTgwNzIwMDE)(Part2)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Prefetched Info (SWxsdXN0cmF0b3Ixe30yMDE4MDcyMDAx)(Part6)
+    Type: Generic
+    User: App Prefetched Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (Q0NMaWJyYXJ5MXt9MjAxODA3MjAwMQ)(Part3)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Prefetched Info (QWNyb2JhdERDMXt9MjAxODA3MjAwMQ)(Part5)
+    Type: Generic
+    User: App Prefetched Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=msteams_adalsso/adal_context_15
+    Type: Generic
+    Local machine persistence
+
+    Target: WindowsLive:target=virtualapp/didlogical
+    Type: Generic
+    User: 02pnpklvncbn
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Prefetched Info (QWNyb2JhdERDMXt9MjAxODA3MjAwMQ)(Part2)
+    Type: Generic
+    User: App Prefetched Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (QWNyb2JhdFJlYWRlcjF7fTIwMTgwNzIwMDE)(Part4)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (QWNyb2JhdFJlYWRlcjF7fTIwMTgwNzIwMDE)(Part6)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Prefetched Info (QWNyb2JhdERDMXt9MjAxODA3MjAwMQ)(Part3)
+    Type: Generic
+    User: App Prefetched Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (Q29yZVN5bmMxe30yMDE4MDcyMDAx)(Part5)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (SWxsdXN0cmF0b3Ixe30yMDE4MDcyMDAx)(Part7)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (Q0NMaWJyYXJ5MXt9MjAxODA3MjAwMQ)(Part2)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Info (Q0NMaWJyYXJ5MXt9MjAxODA3MjAwMQ)(Part4)
+    Type: Generic
+    User: App Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=Adobe App Prefetched Info (SWxsdXN0cmF0b3Ixe30yMDE4MDcyMDAx)(Part5)
+    Type: Generic
+    User: App Prefetched Info
+    Local machine persistence
+
+    Target: LegacyGeneric:target=WhatsApp_Desktop_WIN32/Danang Yudhito
+    Type: Generic
+    User: Danang Yudhito
+
+C:\WINDOWS\system32>color 84
+
+C:\WINDOWS\system32>date
+The current date is: Tue 03/08/2022
+
+C:\WINDOWS\system32>defrag c:
+
+Invoking defragmentation on (C:)...
+
+
+Pre-Optimization Report:
+
+        Volume Information:
+                Volume size                 = 96.59 GB
+                Free space                  = 3.37 GB
+                Total fragmented space      = 8%
+                Largest free space size     = 154.12 MB
+
+        Note: File fragments larger than 64MB are not included in the fragmentation statistics.
+
+The operation completed successfully.
+
+Post Defragmentation Report:
+
+        Volume Information:
+                Volume size                 = 96.59 GB
+                Free space                  = 3.37 GB
+                Total fragmented space      = 2%
+                Largest free space size     = 67.55 MB
+
+        Note: File fragments larger than 64MB are not included in the fragmentation statistics.
+
+C:\WINDOWS\system32>diskpart
+
+Microsoft DiskPart version 10.0.19041.964
+
+Copyright (C) Microsoft Corporation.
+On computer: DESKTOP-7EH147C
+
+DISKPART> list disk
+
+  Disk ###  Status         Size     Free     Dyn  Gpt
+  --------  -------------  -------  -------  ---  ---
+  Disk 0    Online          223 GB      0 B
+
+DISKPART> detail
+
+Microsoft DiskPart version 10.0.19041.964
+
+DISK        - Display the properties of the selected disk.
+PARTITION   - Display the properties of the selected partition.
+VOLUME      - Display the properties of the selected volume.
+VDISK       - Displays the properties of the selected virtual disk.
+
+DISKPART> exit
+
+Leaving DiskPart...
+
+C:\WINDOWS\system32>driverquery
+
+Module Name  Display Name           Driver Type   Link Date
+============ ====================== ============= ======================
+1394ohci     1394 OHCI Compliant Ho Kernel
+3ware        3ware                  Kernel        5/19/2015 5:28:03 AM
+ACPI         Microsoft ACPI Driver  Kernel
+AcpiDev      ACPI Devices driver    Kernel
+acpiex       Microsoft ACPIEx Drive Kernel
+acpipagr     ACPI Processor Aggrega Kernel
+AcpiPmi      ACPI Power Meter Drive Kernel
+acpitime     ACPI Wake Alarm Driver Kernel
+acsock       acsock                 Kernel        10/12/2016 2:31:21 AM
+Acx01000     Acx01000               Kernel
+ADP80XX      ADP80XX                Kernel        4/10/2015 3:49:48 AM
+AFD          Ancillary Function Dri Kernel
+afunix       afunix                 Kernel
+ahcache      Application Compatibil Kernel
+amdgpio2     AMD GPIO Client Driver Kernel        2/7/2019 4:32:20 PM
+amdi2c       AMD I2C Controller Ser Kernel        3/20/2019 11:57:33 AM
+AmdK8        AMD K8 Processor Drive Kernel
+amdkmdag     amdkmdag               Kernel        12/27/2017 4:58:30 PM
+amdkmdap     amdkmdap               Kernel        12/27/2017 4:46:37 PM
+AmdPPM       AMD Processor Driver   Kernel
+amdsata      amdsata                Kernel        5/14/2015 7:14:52 PM
+amdsbs       amdsbs                 Kernel        12/12/2012 4:21:44 AM
+amdxata      amdxata                Kernel        5/1/2015 7:55:35 AM
+ApfiltrServi AlpsAlpine Pointing-de Kernel        2/21/2019 12:51:10 PM
+AppID        AppID Driver           Kernel
+applockerflt Smartlocker Filter Dri Kernel
+AppvStrm     AppvStrm               File System
+AppvVemgr    AppvVemgr              File System
+AppvVfs      AppvVfs                File System
+arcsas       Adaptec SAS/SATA-II RA Kernel        4/10/2015 2:12:07 AM
+AsyncMac     RAS Asynchronous Media Kernel
+atapi        IDE Channel            Kernel
+b06bdrv      QLogic Network Adapter Kernel        5/25/2016 2:03:08 PM
+bam          Background Activity Mo Kernel
+BasicDisplay BasicDisplay           Kernel
+BasicRender  BasicRender            Kernel
+bcmfn2       bcmfn2 Service         Kernel        11/1/2016 9:09:15 AM
+Beep         Beep                   Kernel
+bindflt      Windows Bind Filter Dr File System
+bowser       Browser                File System
+BthA2dp      Microsoft Bluetooth A2 Kernel
+BthEnum      Bluetooth Enumerator S Kernel
+BthHFAud     Microsoft Bluetooth Ha Kernel
+BthHFEnum    Microsoft Bluetooth Ha Kernel
+BthLEEnum    Bluetooth Low Energy D Kernel
+BthMini      Bluetooth Radio Driver Kernel
+BTHMODEM     Bluetooth Modem Commun Kernel
+BthPan       Bluetooth Device (Pers Kernel
+BTHPORT      Bluetooth Port Driver  Kernel
+BTHUSB       Bluetooth Radio USB Dr Kernel
+bttflt       Microsoft Hyper-V VHDP Kernel
+buttonconver Service for Portable D Kernel
+CAD          Charge Arbitration Dri Kernel
+cdfs         CD/DVD File System Rea File System
+cdrom        CD-ROM Driver          Kernel
+cht4iscsi    cht4iscsi              Kernel        2/5/2019 8:51:31 PM
+cht4vbd      Chelsio Virtual Bus Dr Kernel        2/5/2019 8:47:51 PM
+CimFS        CimFS                  File System
+circlass     Consumer IR Devices    Kernel
+CldFlt       Windows Cloud Files Fi File System
+CLFS         Common Log (CLFS)      Kernel
+CmBatt       Microsoft ACPI Control Kernel
+CNG          CNG                    Kernel
+cnghwassist  CNG Hardware Assist al Kernel
+CnxtHdAudSer Conexant UAA Function  Kernel        5/10/2018 9:55:24 AM
+CompositeBus Composite Bus Enumerat Kernel
+condrv       Console Driver         Kernel
+CSC          Offline Files Driver   Kernel
+dam          Desktop Activity Moder Kernel
+Dfsc         DFS Namespace Client D File System
+disk         Disk Driver            Kernel
+dmvsc        dmvsc                  Kernel
+drmkaud      Microsoft Trusted Audi Kernel
+DXGKrnl      LDDM Graphics Subsyste Kernel
+e1dexpress   Intel(R) PRO/1000 PCI  Kernel        9/29/2020 10:11:02 PM
+e1i65x64     Intel(R) PRO/1000 PCI  Kernel        6/12/2018 1:01:06 AM
+ebdrv        QLogic 10 Gigabit Ethe Kernel        5/25/2016 2:01:05 PM
+EhStorClass  Enhanced Storage Filte Kernel
+EhStorTcgDrv Microsoft driver for s Kernel
+EkaProt6     Ekahau User Protocol D Kernel        2/12/2016 4:20:40 PM
+ErrDev       Microsoft Hardware Err Kernel
+exfat        exFAT File System Driv File System
+fastfat      FAT12/16/32 File Syste File System
+fdc          Floppy Disk Controller Kernel
+FileCrypt    FileCrypt              File System
+FileInfo     File Information FS Mi File System
+Filetrace    Filetrace              File System
+flpydisk     Floppy Disk Driver     Kernel
+FltMgr       FltMgr                 File System
+FortiFilter  FortiClient NDIS 6.3 P Kernel        6/8/2018 1:25:16 AM
+Fortips      Fortips                Kernel        8/22/2020 2:36:02 AM
+FortiTransCt FortiTransCtrl         Kernel        8/22/2020 2:31:07 AM
+FsDepends    File System Dependency File System
+ftsvnic      Fortinet SSL VPN Virtu Kernel        4/14/2020 12:34:52 AM
+ft_vnic      Fortinet Virtual Minip Kernel        4/10/2020 8:39:01 AM
+fvevol       BitLocker Drive Encryp Kernel
+gencounter   Microsoft Hyper-V Gene Kernel
+genericusbfn Generic USB Function C Kernel
+GPIOClx0101  Microsoft GPIO Class E Kernel
+GpuEnergyDrv GPU Energy Driver      Kernel
+hcmon        VMware hcmon           Kernel        11/2/2017 2:43:31 AM
+HdAudAddServ Microsoft 1.1 UAA Func Kernel
+HDAudBus     Microsoft UAA Bus Driv Kernel
+HidBatt      HID UPS Battery Driver Kernel
+HidBth       Microsoft Bluetooth HI Kernel
+hidi2c       Microsoft I2C HID Mini Kernel
+hidinterrupt Common Driver for HID  Kernel
+HidIr        Microsoft Infrared HID Kernel
+hidspi       Microsoft SPI HID Mini Kernel
+HidUsb       Microsoft HID Class Dr Kernel
+HpSAMD       HpSAMD                 Kernel        3/27/2013 4:36:54 AM
+HTTP         HTTP Service           Kernel
+hvcrash      hvcrash                Kernel
+hvservice    Hypervisor/Virtual Mac Kernel
+HwNClx0101   Microsoft Hardware Not Kernel
+hwpolicy     Hardware Policy Driver Kernel
+hyperkbd     hyperkbd               Kernel
+HyperVideo   HyperVideo             Kernel
+i8042prt     PS/2 Keyboard and Mous Kernel
+iagpio       Intel Serial IO GPIO C Kernel        7/23/2018 4:04:46 PM
+iai2c        Intel(R) Serial IO I2C Kernel        7/23/2018 4:04:39 PM
+iaLPSS2i_GPI Intel(R) Serial IO GPI Kernel        4/19/2018 2:53:24 PM
+iaLPSS2i_GPI Intel(R) Serial IO GPI Kernel        4/17/2018 4:25:15 PM
+iaLPSS2i_GPI Intel(R) Serial IO GPI Kernel        4/17/2018 2:07:03 PM
+iaLPSS2i_GPI Intel(R) Serial IO GPI Kernel        5/16/2018 12:46:36 PM
+iaLPSS2i_I2C Intel(R) Serial IO I2C Kernel        4/19/2018 2:52:58 PM
+iaLPSS2i_I2C Intel(R) Serial IO I2C Kernel        4/17/2018 4:24:40 PM
+iaLPSS2i_I2C Intel(R) Serial IO I2C Kernel        7/15/2019 12:12:12 PM
+iaLPSS2i_I2C Intel(R) Serial IO I2C Kernel        5/16/2018 12:46:02 PM
+iaLPSSi_GPIO Intel(R) Serial IO GPI Kernel        2/2/2015 4:00:09 PM
+iaLPSSi_I2C  Intel(R) Serial IO I2C Kernel        2/24/2015 10:52:07 PM
+iaStorAC     Intel(R) Chipset SATA/ Kernel        3/20/2018 5:03:43 PM
+iaStorAVC    Intel Chipset SATA RAI Kernel        9/5/2019 7:07:32 PM
+iaStorV      Intel RAID Controller  Kernel        4/12/2011 1:48:16 AM
+ibbus        Mellanox InfiniBand Bu Kernel        6/19/2019 8:20:09 PM
+IBMPMDRV     IBMPMDRV               Kernel        11/6/2019 11:53:21 AM
+ibtusb       Intel(R) Wireless Blue Kernel        7/9/2021 3:39:09 PM
+igfx         igfx                   Kernel        8/21/2021 2:34:11 AM
+IndirectKmd  Indirect Displays Kern Kernel
+IntcDAud     Intel(R) Display Audio Kernel        4/16/2021 10:34:27 PM
+intelide     intelide               Kernel
+intelpep     Intel(R) Power Engine  Kernel
+intelpmax    Intel(R) Dynamic Devic Kernel
+intelppm     Intel Processor Driver Kernel
+iorate       Disk I/O Rate Filter D Kernel
+IpFilterDriv IP Traffic Filter Driv Kernel
+IPMIDRV      IPMIDRV                Kernel
+IPNAT        IP Network Address Tra Kernel
+IPT          IPT                    Kernel
+isapnp       isapnp                 Kernel
+iScsiPrt     iScsiPort Driver       Kernel
+ItSas35i     ItSas35i               Kernel        6/20/2019 2:35:34 PM
+kbdclass     Keyboard Class Driver  Kernel
+kbdhid       Keyboard HID Driver    Kernel
+kbldfltr     kbldfltr               Kernel
+kdnic        Microsoft Kernel Debug Kernel
+KSecDD       KSecDD                 Kernel
+KSecPkg      KSecPkg                Kernel
+ksthunk      Kernel Streaming Thunk Kernel
+lltdio       Link-Layer Topology Di Kernel
+LSI_SAS      LSI_SAS                Kernel        3/26/2015 2:36:48 AM
+LSI_SAS2i    LSI_SAS2i              Kernel        8/2/2017 8:29:59 PM
+LSI_SAS3i    LSI_SAS3i              Kernel        4/4/2019 1:54:35 PM
+LSI_SSS      LSI_SSS                Kernel        3/16/2013 6:39:38 AM
+luafv        UAC File Virtualizatio File System
+mausbhost    MA-USB Host Controller Kernel
+mausbip      MA-USB IP Filter Drive Kernel
+MbbCx        MBB Network Adapter Cl Kernel
+megasas      megasas                Kernel        3/5/2015 9:36:29 AM
+megasas2i    megasas2i              Kernel        4/4/2019 8:28:53 PM
+megasas35i   megasas35i             Kernel        6/20/2019 5:01:12 PM
+megasr       megasr                 Kernel        6/4/2013 5:02:39 AM
+MEIx64       Intel(R) Management En Kernel        2/16/2021 8:18:42 PM
+Microsoft_Bl Microsoft Bluetooth Av Kernel
+mlx4_bus     Mellanox ConnectX Bus  Kernel        6/19/2019 8:21:08 PM
+MMCSS        Multimedia Class Sched Kernel
+Modem        Modem                  Kernel
+monitor      Microsoft Monitor Clas Kernel
+mouclass     Mouse Class Driver     Kernel
+mouhid       Mouse HID Driver       Kernel
+mountmgr     Mount Point Manager    Kernel
+mpsdrv       Windows Defender Firew Kernel
+MRxDAV       WebDav Client Redirect File System
+mrxsmb       SMB MiniRedirector Wra File System
+mrxsmb20     SMB 2.0 MiniRedirector File System
+MsBridge     Microsoft MAC Bridge   Kernel
+Msfs         Msfs                   File System
+msgpiowin32  Common Driver for Butt Kernel
+mshidkmdf    Pass-through HID to KM Kernel
+mshidumdf    Pass-through HID to UM Kernel
+msisadrv     msisadrv               Kernel
+MSKSSRV      Microsoft Streaming Se Kernel
+MsLldp       Microsoft Link-Layer D Kernel
+MSPCLOCK     Microsoft Streaming Cl Kernel
+MSPQM        Microsoft Streaming Qu Kernel
+MsQuic       MsQuic                 Kernel
+MsRPC        MsRPC                  Kernel
+MsSecFlt     Microsoft Security Eve Kernel
+mssmbios     Microsoft System Manag Kernel
+MSTEE        Microsoft Streaming Te Kernel
+MTConfig     Microsoft Input Config Kernel
+Mup          Mup                    File System
+mvumis       mvumis                 Kernel        5/24/2014 3:39:04 AM
+NativeWifiP  NativeWiFi Filter      Kernel
+ndfltr       NetworkDirect Service  Kernel        6/19/2019 8:18:42 PM
+NDIS         NDIS System Driver     Kernel
+NdisCap      Microsoft NDIS Capture Kernel
+NdisImPlatfo Microsoft Network Adap Kernel
+NdisTapi     Remote Access NDIS TAP Kernel
+Ndisuio      NDIS Usermode I/O Prot Kernel
+NdisVirtualB Microsoft Virtual Netw Kernel
+NdisWan      Remote Access NDIS WAN Kernel
+ndiswanlegac Remote Access LEGACY N Kernel
+NDKPing      NDKPing Driver         Kernel
+ndproxy      NDIS Proxy Driver      Kernel
+Ndu          Windows Network Data U Kernel
+NetAdapterCx Network Adapter Wdf Cl Kernel
+NetBIOS      NetBIOS Interface      File System
+NetBT        NetBT                  Kernel
+netvsc       netvsc                 Kernel
+Netwtw04     ___ Intel(R) Wireless  Kernel        8/11/2021 12:29:11 AM
+NPF          NetGroup Packet Filter Kernel        3/1/2013 8:31:24 AM
+Npfs         Npfs                   File System
+npsvctrig    Named pipe service tri Kernel
+nsiproxy     NSI Proxy Service Driv Kernel
+Ntfs         Ntfs                   File System
+Null         Null                   Kernel
+nvdimm       Microsoft NVDIMM devic Kernel
+nvraid       nvraid                 Kernel        4/22/2014 1:28:42 AM
+nvstor       nvstor                 Kernel        4/22/2014 1:34:03 AM
+Parport      Parallel port driver   Kernel
+partmgr      Partition driver       Kernel
+pci          PCI Bus Driver         Kernel
+pciide       pciide                 Kernel
+pcmcia       pcmcia                 Kernel
+pcw          Performance Counters f Kernel
+pdc          pdc                    Kernel
+PEAUTH       PEAUTH                 Kernel
+percsas2i    percsas2i              Kernel        3/15/2016 7:50:11 AM
+percsas3i    percsas3i              Kernel        6/2/2018 4:47:02 AM
+PktMon       Packet Monitor Driver  Kernel
+PMDRVS       PMDRVS                 Kernel        11/6/2019 11:53:27 AM
+pmem         Microsoft persistent m Kernel
+PNPMEM       Microsoft Memory Modul Kernel
+portcfg      portcfg                Kernel
+pppop        PPPoP WAN Adapter      Kernel        3/23/2016 5:01:28 AM
+PptpMiniport WAN Miniport (PPTP)    Kernel
+Processor    Processor Driver       Kernel
+Psched       QoS Packet Scheduler   Kernel
+QWAVEdrv     QWAVE driver           Kernel
+Ramdisk      Windows RAM Disk Drive Kernel
+RasAcd       Remote Access Auto Con Kernel
+RasAgileVpn  WAN Miniport (IKEv2)   Kernel
+Rasl2tp      WAN Miniport (L2TP)    Kernel
+RasPppoe     Remote Access PPPOE Dr Kernel
+RasSstp      WAN Miniport (SSTP)    Kernel
+rdbss        Redirected Buffering S File System
+rdpbus       Remote Desktop Device  Kernel
+RDPDR        Remote Desktop Device  Kernel
+RdpVideoMini Remote Desktop Video M Kernel
+rdyboost     ReadyBoost             Kernel
+ReFS         ReFS                   File System
+ReFSv1       ReFSv1                 File System
+RFCOMM       Bluetooth Device (RFCO Kernel
+rhproxy      Resource Hub proxy dri Kernel
+rspndr       Link-Layer Topology Di Kernel
+RTSPER       Realtek PCIE Card Read Kernel        4/7/2016 1:34:46 PM
+rtsuvc       Integrated Camera      Kernel        5/29/2018 6:18:15 PM
+s3cap        s3cap                  Kernel
+sbp2port     SBP-2 Transport/Protoc Kernel
+scfilter     Smart card PnP Class F Kernel
+scmbus       Microsoft Storage Clas Kernel
+sdbus        sdbus                  Kernel
+SDFRd        SDF Reflector          Kernel
+sdstor       SD Storage Port Driver Kernel
+ser2at       ATEN Serial port WDF D Kernel        10/8/2015 12:57:11 PM
+SerCx        Serial UART Support Li Kernel
+SerCx2       Serial UART Support Li Kernel
+Serenum      Serenum Filter Driver  Kernel
+Serial       Serial port driver     Kernel
+sermouse     Serial Mouse Driver    Kernel
+sfloppy      High-Capacity Floppy D Kernel
+SgrmAgent    System Guard Runtime M Kernel
+Shockprf     Shockprf               Kernel        3/13/2017 8:19:24 PM
+SiSRaid2     SiSRaid2               Kernel        9/25/2008 1:28:20 AM
+SiSRaid4     SiSRaid4               Kernel        10/2/2008 4:56:04 AM
+SmartSAMD    SmartSAMD              Kernel        2/22/2019 12:54:44 AM
+smbdirect    smbdirect              File System
+SMIDriverGen Synaptics SMI Driver   Kernel        4/20/2018 3:08:39 PM
+spaceparser  Space Parser           Kernel
+spaceport    Storage Spaces Driver  Kernel
+SpatialGraph Holographic Spatial Gr Kernel
+SpbCx        Simple Peripheral Bus  Kernel
+srv          Server SMB 1.xxx Drive File System
+srv2         Server SMB 2.xxx Drive File System
+srvnet       srvnet                 File System
+stexstor     stexstor               Kernel        11/27/2012 7:02:51 AM
+storahci     Microsoft Standard SAT Kernel
+storflt      Microsoft Hyper-V Stor Kernel
+stornvme     Microsoft Standard NVM Kernel
+storqosflt   Storage QoS Filter Dri File System
+storufs      Microsoft Universal Fl Kernel
+storvsc      storvsc                Kernel
+swenum       Software Bus Driver    Kernel
+Synth3dVsc   Synth3dVsc             Kernel
+tap0901      TAP-Windows Adapter V9 Kernel        4/21/2016 4:10:05 PM
+Tcpip        TCP/IP Protocol Driver Kernel
+Tcpip6       @todo.dll,-100;Microso Kernel
+tcpipreg     TCP/IP Registry Compat Kernel
+tdx          NetIO Legacy TDI Suppo Kernel
+Telemetry    Intel(R) Telemetry Ser Kernel
+terminpt     Microsoft Remote Deskt Kernel
+TPDIGIMN     TPDIGIMN               Kernel        3/13/2017 8:16:44 PM
+TPM          TPM                    Kernel
+TPPWRIF      TPPWRIF                Kernel        2/16/2017 11:57:36 AM
+TsUsbFlt     Remote Desktop USB Hub Kernel
+TsUsbGD      Remote Desktop Generic Kernel
+tsusbhub     Remote Desktop USB Hub Kernel
+tunnel       Microsoft Tunnel Minip Kernel
+UASPStor     USB Attached SCSI (UAS Kernel
+UcmCx0101    USB Connector Manager  Kernel
+UcmTcpciCx01 UCM-TCPCI KMDF Class E Kernel
+UcmUcsiAcpiC UCM-UCSI ACPI Client   Kernel
+UcmUcsiCx010 UCM-UCSI KMDF Class Ex Kernel
+Ucx01000     USB Host Support Libra Kernel
+UdeCx        USB Device Emulation S Kernel
+udfs         udfs                   File System
+UEFI         Microsoft UEFI Driver  Kernel
+UevAgentDriv UevAgentDriver         File System
+Ufx01000     USB Function Class Ext Kernel
+UfxChipidea  USB Chipidea Controlle Kernel
+ufxsynopsys  USB Synopsys Controlle Kernel
+umbus        UMBus Enumerator Drive Kernel
+UmPass       Microsoft UMPass Drive Kernel
+UrsChipidea  Chipidea USB Role-Swit Kernel
+UrsCx01000   USB Role-Switch Suppor Kernel
+UrsSynopsys  Synopsys USB Role-Swit Kernel
+usbaudio     USB Audio Driver (WDM) Kernel
+usbaudio2    USB Audio 2.0 Service  Kernel
+usbccgp      Microsoft USB Generic  Kernel
+usbcir       eHome Infrared Receive Kernel
+usbehci      Microsoft USB 2.0 Enha Kernel
+usbhub       Microsoft USB Standard Kernel
+USBHUB3      SuperSpeed Hub         Kernel
+usbohci      Microsoft USB Open Hos Kernel
+usbprint     Microsoft USB PRINTER  Kernel
+usbscan      USB Scanner Driver     Kernel
+usbser       Microsoft USB Serial D Kernel
+USBSTOR      USB Mass Storage Drive Kernel
+usbuhci      Microsoft USB Universa Kernel
+usbvideo     USB Video Device (WDM) Kernel
+USBXHCI      USB xHCI Compliant Hos Kernel
+vdrvroot     Microsoft Virtual Driv Kernel
+VerifierExt  Driver Verifier Extens Kernel
+vhdmp        vhdmp                  Kernel
+vhf          Virtual HID Framework  Kernel
+Vid          Vid                    Kernel
+VirtualRende VirtualRender          Kernel
+vmbus        Virtual Machine Bus    Kernel
+VMBusHID     VMBusHID               Kernel
+vmci         VMware VMCI Bus Driver Kernel        6/4/2016 3:08:00 PM
+vmgid        Microsoft Hyper-V Gues Kernel
+VMnetAdapter VMware Virtual Etherne Kernel        8/24/2017 6:39:33 AM
+VMnetBridge  VMware Bridge Protocol Kernel        8/24/2017 6:39:34 AM
+VMnetUserif  VMware Virtual Etherne Kernel        8/24/2017 6:39:33 AM
+vmx86        VMware vmx86           Kernel        8/25/2017 2:33:52 PM
+volmgr       Volume Manager Driver  Kernel
+volmgrx      Dynamic Volume Manager Kernel
+volsnap      Volume Shadow Copy dri Kernel
+volume       Volume driver          Kernel
+vpci         Microsoft Hyper-V Virt Kernel
+vpnva        Cisco AnyConnect Secur Kernel        2/26/2014 11:46:48 PM
+vsmraid      vsmraid                Kernel        4/23/2014 2:21:41 AM
+VSTXRAID     VIA StorX Storage RAID Kernel        1/22/2013 2:00:28 AM
+vwifibus     Virtual Wireless Bus D Kernel
+vwififlt     Virtual WiFi Filter Dr Kernel
+vwifimp      Virtual WiFi Miniport  Kernel
+WacomPen     Wacom Serial Pen HID D Kernel
+wanarp       Remote Access IP ARP D Kernel
+wanarpv6     Remote Access IPv6 ARP Kernel
+wcifs        Windows Container Isol File System
+wcnfs        Windows Container Name File System
+WdBoot       Microsoft Defender Ant Kernel
+Wdf01000     Kernel Mode Driver Fra Kernel
+WdFilter     Microsoft Defender Ant File System
+wdiwifi      WDI Driver Framework   Kernel
+WdmCompanion WdmCompanionFilter     Kernel
+WdNisDrv     Microsoft Defender Ant Kernel
+WFPLWFS      Microsoft Windows Filt Kernel
+WIMMount     WIMMount               File System
+WindowsTrust Windows Trusted Execut Kernel
+WindowsTrust Microsoft Windows Trus Kernel
+WinMad       WinMad Service         Kernel        6/19/2019 8:18:11 PM
+WinNat       Windows NAT Driver     Kernel
+WINUSB       WinUsb Driver          Kernel
+WinVerbs     WinVerbs Service       Kernel        6/19/2019 8:18:12 PM
+WmiAcpi      Microsoft Windows Mana Kernel
+Wof          Windows Overlay File S File System
+WpdUpFltr    WPD Upper Class Filter Kernel
+ws2ifsl      Winsock IFS Driver     Kernel
+WudfPf       User Mode Driver Frame Kernel
+WUDFRd       Windows Driver Foundat Kernel
+WUDFWpdFs    WPD File System driver Kernel
+xboxgip      Xbox Game Input Protoc Kernel
+xinputhid    XINPUT HID Filter Driv Kernel
+MpKsla4e8340 MpKsla4e8340d          Kernel
+
+C:\WINDOWS\system32>ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet 4:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Ethernet adapter Ethernet:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Ethernet adapter Ethernet 3:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 3:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Ethernet adapter VMware Network Adapter VMnet1:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::edf2:560c:ad93:feb9%16
+   IPv4 Address. . . . . . . . . . . : 192.168.129.1
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . :
+
+Ethernet adapter VMware Network Adapter VMnet8:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::100d:55d0:2f3e:b4eb%15
+   IPv4 Address. . . . . . . . . . . : 192.168.15.1
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . :
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::18a3:851e:251b:db42%14
+   IPv4 Address. . . . . . . . . . . : 192.168.100.2
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.100.1
+
+Ethernet adapter Bluetooth Network Connection:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+C:\WINDOWS\system32>getmac
+
+Physical Address    Transport Name
+=================== ==========================================================
+00-09-0F-AA-00-01   Media disconnected
+Disabled            Disconnected
+00-09-0F-FE-00-01   Media disconnected
+N/A                 Hardware not present
+00-50-56-C0-00-01   \Device\Tcpip_{ABCA7593-1192-45A3-8602-0C116FC29DE4}
+00-50-56-C0-00-08   \Device\Tcpip_{AB0994FB-28E7-4B7A-97B3-ADE2BD0FE176}
+50-7B-9D-68-A1-A7   Media disconnected
+E0-94-67-38-E3-C0   \Device\Tcpip_{9D80617C-40BB-4E13-A453-E18D5FC0EC22}
+E0-94-67-38-E3-C4   Media disconnected
+
+C:\WINDOWS\system32>logman
+
+Data Collector Set                      Type                          Status
+-------------------------------------------------------------------------------
+
+The command completed successfully.
+
+C:\WINDOWS\system32>netstat
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State
+  TCP    127.0.0.1:8254         DESKTOP-7EH147C:50766  ESTABLISHED
+  TCP    127.0.0.1:8254         DESKTOP-7EH147C:55704  ESTABLISHED
+  TCP    127.0.0.1:8254         DESKTOP-7EH147C:55706  ESTABLISHED
+  TCP    127.0.0.1:8254         DESKTOP-7EH147C:55708  ESTABLISHED
+  TCP    127.0.0.1:8888         DESKTOP-7EH147C:55837  ESTABLISHED
+  TCP    127.0.0.1:8888         DESKTOP-7EH147C:56097  ESTABLISHED
+  TCP    127.0.0.1:8888         DESKTOP-7EH147C:56099  ESTABLISHED
+  TCP    127.0.0.1:8888         DESKTOP-7EH147C:56154  TIME_WAIT
+  TCP    127.0.0.1:8888         DESKTOP-7EH147C:56156  ESTABLISHED
+  TCP    127.0.0.1:8888         DESKTOP-7EH147C:56181  ESTABLISHED
+  TCP    127.0.0.1:8888         DESKTOP-7EH147C:56223  TIME_WAIT
+  TCP    127.0.0.1:8888         DESKTOP-7EH147C:56253  TIME_WAIT
+  TCP    127.0.0.1:8888         DESKTOP-7EH147C:56266  ESTABLISHED
+  TCP    127.0.0.1:8888         DESKTOP-7EH147C:56273  FIN_WAIT_2
+  TCP    127.0.0.1:8888         DESKTOP-7EH147C:56278  TIME_WAIT
+  TCP    127.0.0.1:8888         DESKTOP-7EH147C:56293  TIME_WAIT
+  TCP    127.0.0.1:8888         DESKTOP-7EH147C:56294  TIME_WAIT
+  TCP    127.0.0.1:8888         DESKTOP-7EH147C:56299  ESTABLISHED
+  TCP    127.0.0.1:8888         DESKTOP-7EH147C:56300  ESTABLISHED
+  TCP    127.0.0.1:8888         DESKTOP-7EH147C:56309  TIME_WAIT
+  TCP    127.0.0.1:8888         DESKTOP-7EH147C:56326  ESTABLISHED
+  TCP    127.0.0.1:8888         DESKTOP-7EH147C:56327  ESTABLISHED
+  TCP    127.0.0.1:8888         DESKTOP-7EH147C:56338  TIME_WAIT
+  TCP    127.0.0.1:8888         DESKTOP-7EH147C:56340  TIME_WAIT
+  TCP    127.0.0.1:8888         DESKTOP-7EH147C:56379  ESTABLISHED
+  TCP    127.0.0.1:8888         DESKTOP-7EH147C:56381  ESTABLISHED
+  TCP    127.0.0.1:8888         DESKTOP-7EH147C:56403  TIME_WAIT
+  TCP    127.0.0.1:8888         DESKTOP-7EH147C:56404  ESTABLISHED
+  TCP    127.0.0.1:8888         DESKTOP-7EH147C:56407  ESTABLISHED
+  TCP    127.0.0.1:8888         DESKTOP-7EH147C:56410  ESTABLISHED
+  TCP    127.0.0.1:8888         DESKTOP-7EH147C:56431  ESTABLISHED
+  TCP    127.0.0.1:8888         DESKTOP-7EH147C:65154  ESTABLISHED
+  TCP    127.0.0.1:50766        DESKTOP-7EH147C:8254   ESTABLISHED
+  TCP    127.0.0.1:51722        DESKTOP-7EH147C:51723  ESTABLISHED
+  TCP    127.0.0.1:51723        DESKTOP-7EH147C:51722  ESTABLISHED
+  TCP    127.0.0.1:51725        DESKTOP-7EH147C:51726  ESTABLISHED
+  TCP    127.0.0.1:51726        DESKTOP-7EH147C:51725  ESTABLISHED
+  TCP    127.0.0.1:51727        DESKTOP-7EH147C:51729  ESTABLISHED
+  TCP    127.0.0.1:51729        DESKTOP-7EH147C:51727  ESTABLISHED
+  TCP    127.0.0.1:51732        DESKTOP-7EH147C:51735  ESTABLISHED
+  TCP    127.0.0.1:51735        DESKTOP-7EH147C:51732  ESTABLISHED
+  TCP    127.0.0.1:55704        DESKTOP-7EH147C:8254   ESTABLISHED
+  TCP    127.0.0.1:55706        DESKTOP-7EH147C:8254   ESTABLISHED
+  TCP    127.0.0.1:55708        DESKTOP-7EH147C:8254   ESTABLISHED
+  TCP    127.0.0.1:55837        DESKTOP-7EH147C:8888   ESTABLISHED
+  TCP    127.0.0.1:56097        DESKTOP-7EH147C:8888   ESTABLISHED
+  TCP    127.0.0.1:56099        DESKTOP-7EH147C:8888   ESTABLISHED
+  TCP    127.0.0.1:56156        DESKTOP-7EH147C:8888   ESTABLISHED
+  TCP    127.0.0.1:56181        DESKTOP-7EH147C:8888   ESTABLISHED
+  TCP    127.0.0.1:56252        DESKTOP-7EH147C:8888   TIME_WAIT
+  TCP    127.0.0.1:56266        DESKTOP-7EH147C:8888   ESTABLISHED
+  TCP    127.0.0.1:56273        DESKTOP-7EH147C:8888   CLOSE_WAIT
+  TCP    127.0.0.1:56299        DESKTOP-7EH147C:8888   ESTABLISHED
+  TCP    127.0.0.1:56300        DESKTOP-7EH147C:8888   ESTABLISHED
+  TCP    127.0.0.1:56326        DESKTOP-7EH147C:8888   ESTABLISHED
+  TCP    127.0.0.1:56327        DESKTOP-7EH147C:8888   ESTABLISHED
+  TCP    127.0.0.1:56332        DESKTOP-7EH147C:56331  TIME_WAIT
+  TCP    127.0.0.1:56336        DESKTOP-7EH147C:8888   TIME_WAIT
+  TCP    127.0.0.1:56343        DESKTOP-7EH147C:8888   TIME_WAIT
+  TCP    127.0.0.1:56347        DESKTOP-7EH147C:56345  TIME_WAIT
+  TCP    127.0.0.1:56351        DESKTOP-7EH147C:8888   TIME_WAIT
+  TCP    127.0.0.1:56354        DESKTOP-7EH147C:8888   TIME_WAIT
+  TCP    127.0.0.1:56355        DESKTOP-7EH147C:8888   TIME_WAIT
+  TCP    127.0.0.1:56358        DESKTOP-7EH147C:8888   TIME_WAIT
+  TCP    127.0.0.1:56359        DESKTOP-7EH147C:8888   TIME_WAIT
+  TCP    127.0.0.1:56364        DESKTOP-7EH147C:56363  TIME_WAIT
+  TCP    127.0.0.1:56368        DESKTOP-7EH147C:8888   TIME_WAIT
+  TCP    127.0.0.1:56370        DESKTOP-7EH147C:8888   TIME_WAIT
+  TCP    127.0.0.1:56372        DESKTOP-7EH147C:8888   TIME_WAIT
+  TCP    127.0.0.1:56375        DESKTOP-7EH147C:56374  TIME_WAIT
+  TCP    127.0.0.1:56379        DESKTOP-7EH147C:8888   ESTABLISHED
+  TCP    127.0.0.1:56381        DESKTOP-7EH147C:8888   ESTABLISHED
+  TCP    127.0.0.1:56384        DESKTOP-7EH147C:56383  TIME_WAIT
+  TCP    127.0.0.1:56390        DESKTOP-7EH147C:8888   TIME_WAIT
+  TCP    127.0.0.1:56391        DESKTOP-7EH147C:8888   TIME_WAIT
+  TCP    127.0.0.1:56396        DESKTOP-7EH147C:56395  TIME_WAIT
+  TCP    127.0.0.1:56400        DESKTOP-7EH147C:8888   TIME_WAIT
+  TCP    127.0.0.1:56404        DESKTOP-7EH147C:8888   ESTABLISHED
+  TCP    127.0.0.1:56407        DESKTOP-7EH147C:8888   ESTABLISHED
+  TCP    127.0.0.1:56410        DESKTOP-7EH147C:8888   ESTABLISHED
+  TCP    127.0.0.1:56413        DESKTOP-7EH147C:56412  TIME_WAIT
+  TCP    127.0.0.1:56419        DESKTOP-7EH147C:56418  TIME_WAIT
+  TCP    127.0.0.1:56423        DESKTOP-7EH147C:8888   TIME_WAIT
+  TCP    127.0.0.1:56427        DESKTOP-7EH147C:56426  TIME_WAIT
+  TCP    127.0.0.1:56431        DESKTOP-7EH147C:8888   ESTABLISHED
+  TCP    127.0.0.1:62522        DESKTOP-7EH147C:62857  ESTABLISHED
+  TCP    127.0.0.1:62857        DESKTOP-7EH147C:62522  ESTABLISHED
+  TCP    127.0.0.1:62949        DESKTOP-7EH147C:63230  ESTABLISHED
+  TCP    127.0.0.1:63230        DESKTOP-7EH147C:62949  ESTABLISHED
+  TCP    127.0.0.1:65154        DESKTOP-7EH147C:8888   ESTABLISHED
+  TCP    192.168.100.2:49199    a23-200-190-16:https   ESTABLISHED
+  TCP    192.168.100.2:49254    sb-in-f188:5228        ESTABLISHED
+  TCP    192.168.100.2:49259    sa-in-f94:https        CLOSE_WAIT
+  TCP    192.168.100.2:49364    sl-in-f188:5228        ESTABLISHED
+  TCP    192.168.100.2:49366    server-13-35-21-32:https  CLOSE_WAIT
+  TCP    192.168.100.2:49381    a23-192-200-108:https  ESTABLISHED
+  TCP    192.168.100.2:49408    52.98.84.98:https      ESTABLISHED
+  TCP    192.168.100.2:49506    a23-200-179-166:https  CLOSE_WAIT
+  TCP    192.168.100.2:49519    sd-in-f95:https        CLOSE_WAIT
+  TCP    192.168.100.2:49529    sl-in-f188:5228        ESTABLISHED
+  TCP    192.168.100.2:49549    sd-in-f94:https        CLOSE_WAIT
+  TCP    192.168.100.2:49565    any-in-2678:https      CLOSE_WAIT
+  TCP    192.168.100.2:49572    any-in-2678:https      CLOSE_WAIT
+  TCP    192.168.100.2:49576    any-in-2678:https      CLOSE_WAIT
+  TCP    192.168.100.2:49578    any-in-2678:https      CLOSE_WAIT
+  TCP    192.168.100.2:49580    any-in-2678:https      CLOSE_WAIT
+  TCP    192.168.100.2:49586    sd-in-f94:https        CLOSE_WAIT
+  TCP    192.168.100.2:49641    sc-in-f95:https        CLOSE_WAIT
+  TCP    192.168.100.2:49646    sc-in-f95:https        CLOSE_WAIT
+  TCP    192.168.100.2:49679    sd-in-f94:https        CLOSE_WAIT
+  TCP    192.168.100.2:49681    sd-in-f94:https        CLOSE_WAIT
+  TCP    192.168.100.2:49692    sd-in-f94:https        CLOSE_WAIT
+  TCP    192.168.100.2:49695    sd-in-f94:https        CLOSE_WAIT
+  TCP    192.168.100.2:49696    sd-in-f94:https        CLOSE_WAIT
+  TCP    192.168.100.2:49698    sd-in-f94:https        CLOSE_WAIT
+  TCP    192.168.100.2:49836    cdn-185-199-111-133:https  ESTABLISHED
+  TCP    192.168.100.2:49841    se-in-f101:https       CLOSE_WAIT
+  TCP    192.168.100.2:49992    se-in-f101:https       CLOSE_WAIT
+  TCP    192.168.100.2:50089    20.205.243.168:https   CLOSE_WAIT
+  TCP    192.168.100.2:50116    sf-in-f83:https        CLOSE_WAIT
+  TCP    192.168.100.2:50118    sf-in-f83:https        CLOSE_WAIT
+  TCP    192.168.100.2:50122    any-in-2678:https      CLOSE_WAIT
+  TCP    192.168.100.2:50139    si-in-f101:https       CLOSE_WAIT
+  TCP    192.168.100.2:50150    40.99.10.114:https     ESTABLISHED
+  TCP    192.168.100.2:50167    si-in-f188:5228        ESTABLISHED
+  TCP    192.168.100.2:50595    si-in-f188:5228        ESTABLISHED
+  TCP    192.168.100.2:50601    a23-200-179-248:https  ESTABLISHED
+  TCP    192.168.100.2:50610    a23-200-179-248:https  ESTABLISHED
+  TCP    192.168.100.2:50623    sf-in-f95:https        CLOSE_WAIT
+  TCP    192.168.100.2:50641    se-in-f113:https       CLOSE_WAIT
+  TCP    192.168.100.2:50663    sa-in-f94:https        CLOSE_WAIT
+  TCP    192.168.100.2:50694    sd-in-f94:https        CLOSE_WAIT
+  TCP    192.168.100.2:50736    sf-in-f18:https        CLOSE_WAIT
+  TCP    192.168.100.2:50787    40.99.10.114:https     ESTABLISHED
+  TCP    192.168.100.2:50806    sd-in-f188:5228        ESTABLISHED
+  TCP    192.168.100.2:50823    a23-200-179-248:https  ESTABLISHED
+  TCP    192.168.100.2:50929    sf-in-f94:https        CLOSE_WAIT
+  TCP    192.168.100.2:50956    sd-in-f188:5228        ESTABLISHED
+  TCP    192.168.100.2:50976    si-in-f113:https       CLOSE_WAIT
+  TCP    192.168.100.2:51082    sd-in-f188:5228        ESTABLISHED
+  TCP    192.168.100.2:51121    sf-in-f93:https        CLOSE_WAIT
+  TCP    192.168.100.2:51122    76.76.21.21:https      CLOSE_WAIT
+
+C:\Windows>ping 8.8.8.8 -t
+
+Pinging 8.8.8.8 with 32 bytes of data:
+Reply from 8.8.8.8: bytes=32 time=17ms TTL=117
+Reply from 8.8.8.8: bytes=32 time=17ms TTL=117
+
+Ping statistics for 8.8.8.8:
+    Packets: Sent = 2, Received = 2, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 17ms, Maximum = 17ms, Average = 17ms
+
+C:\Windows>quser
+ USERNAME              SESSIONNAME        ID  STATE   IDLE TIME  LOGON TIME
+>danang yudhito        console             3  Active       9:10  3/8/2022 5:18 PM
+
+C:\WINDOWS\system32>whoami
+desktop-7eh147c\danang yudhito
+
+\\Powershell
+PS C:\Users\Danang Yudhito> Scripts\My First Script.ps1
+Scripts\My : The module 'Scripts' could not be loaded. For more information, run 'Import-Module Scripts'.
+At line:1 char:1
++ Scripts\My First Script.ps1
++ ~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Scripts\My:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CouldNotAutoLoadModule
+
+PS D:\> & "D:\belajarphyton\My First Script.ps1"
+Hello, World!
+PS D:\>
+
+PS C:\WINDOWS\system32> Get-WmiObject -Class Win32_OperatingSystem -ComputerName localhost
+
+
+SystemDirectory : C:\WINDOWS\system32
+Organization    : 
+BuildNumber     : 19043
+RegisteredUser  : Danang Yudhito
+SerialNumber    : 00331-20090-00000-AA054
+Version         : 10.0.19043
+
+PS D:\> & "D:\belajarphyton\FirstScript.ps1"
+Hello, Guru99!
+
+
+
+
